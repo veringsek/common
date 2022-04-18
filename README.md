@@ -20,7 +20,7 @@ clone(object: any, target?: (array, object), onconflict?: (string|function)): an
 
 Deep clones an `object` into `target` if `target` exists. The cloned object will be returned.
 
-The `conflict` function will be used along with `key` , `target` and `object` , whenever the cloning `key` already exists in `target` . The default of `conflict` function is a string `'overwrite'` , with which the value in `target` will be overwritten.
+The `onconflict` function will be used along with `key` , `target` and `object` , whenever the cloning `key` already exists in `target` . The default of `onconflict` function is a string `'overwrite'` , with which the value in `target` will be overwritten.
 
 ### createElement
 
